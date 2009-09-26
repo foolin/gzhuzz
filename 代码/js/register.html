@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style type="text/css">
+<!--
+.STYLE2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.STYLE3 {font-size: 15px}
+-->
+</style>
+
+<title>广州大学计算机学院资助系统注册页面</title>
+<script type="text/javascript" src="ajax.js" language="javascript"></script>
+<script type="text/javascript" src="checkusername.js" language="javascript"></script>
+</head>
+<body>
+<form name="form" action="register.php" method="post">
+<table align="center">
+
+  <tr>
+      <td height="30" colspan="2" bgcolor="#FEFBE0"><div align="center"><span class="STYLE2">新用户注册</span></div></td>
+  </tr>
+  
+  <tr>
+      <td width="100" height="33" bgcolor="#F2F3F4"><div align="right" class="STYLE3">用户名：</div></td>
+      <td width="500" bgcolor="#F2F3F4">&nbsp;<input name="username1" type="text" size="15" maxlength="15" onchange="check_username(this.form.username1.value)"><span id="username_label"></span></td>
+  </tr>
+  
+  <tr>
+    <td width="100" height="33" bgcolor="#F2F3F4"><div align="right" class="STYLE3">用户密码：</div></td>
+     <td width="500" bgcolor="#F2F3F4">&nbsp;<input name="register_pwd" id="register_pwd" type="password" size="15" maxlength="15" onBlur="chkpassword()"/><div id="passwordStr" style="background-color:#F2F3F4;display:none"></div></td>
+     </tr>
+     
+     <tr>
+      <td width="100" height="33" bgcolor="#F2F3F4"> <div align="right" class="STYLE3"> 确认密码：</div></td>
+      <td width="500" bgcolor="#F2F3F4">&nbsp;<input name="confirmPassword" id="confirmPassword" type="password" size="15" maxlength="15" onBlur="chkconfirmPassword()"><div id="confirmPasswordStr" style="background-color:#F2F3F4;display:none"></div></td>
+      </tr>    
+      <tr >
+      <td width="100" height="33" bgcolor="#F2F3F4"> <div align="right" class="STYLE3">用户问题：</div></td>
+      <td width="500" bgcolor="#F2F3F4">&nbsp;<select id="user_problem" name="user_problem">
+      <option value="birthday">你的生日是？</option>
+      <option value="fathername">你的父亲的名字</option>
+      <option value="mothername">你母亲的名字</option>
+      <option value="headteacher">你初中班主任的名字</option>
+      </select>
+      </td>
+      </tr>
+      <tr>
+      <td width="100" height="33" bgcolor="#F2F3F4"><div align="right" class="STYLE3">用户答案：</div></td>
+      <td width="500" bgcolor="#F2F3F4">&nbsp;<input id="user_answer" name="user_answer" type="text"  size="15" maxlength="50" onBlur="chkuseranswer()"><div id="useranswer" style="background-color:#F2F3F4;display:none"></div></td>
+      </tr>    
+      
+       
+<tr>
+<td  height="36" colspan="2" bgcolor="#F2F3F4" align="center"><label>
+       <input type="submit" name="ok" id="ok" value="确认" "/>   
+       </label>
+       <input type="reset" name="reset" value="取消" />  
+</td>
+</tr>
+ </table>  
+</form>
+
+</body>
+</html>
