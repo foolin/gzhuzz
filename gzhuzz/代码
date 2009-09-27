@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body>
+<form method="post" action="">
+  <table align="center">
+    姓名：<input type=text value="" name="name" /><br/>
+    性别：<input type=text value="" name="sex" /><br/>
+    学号：<input type=text value="" name="number" /><br/>
+    学院：<input type=text value="" name="xueyuan" /><br/>
+    专业：<input type=text value="" name="zhuanye" /><br/>
+ 家庭地址：<input type=text value="" name="home" /><br/>
+ 邮政编码：<input type=text value="" name="post" /><br/>
+ 联系电话：<input type=text value="" name="phone" /><br/>
+ 补考科目：<input type=text value="" name="bukao" /><br/>
+上学年综合测评排名：<input type=text value="" name="ceping" /><br/>
+是否受处分：<input type=text value="" name="chufen" /><br/>
+ 家庭人口：<input type=text value="" name="renkou" /><br/>
+家庭人均收入：<input type=text value="" name="renjun" /><br/>
+家庭主要成员：此段略，已有记录<br/>   
+申请资助原因：<input type=text value="" name="yuanyin" /><br/>
+<input type=submit value="确认提交">      <input type=reset value="重置"><br/>
+</table>
+</form>
+<?php
+
+
+
+?>
+
