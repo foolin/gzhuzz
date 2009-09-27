@@ -1,0 +1,15 @@
+/* CSS Document */
+.table{
+width:15%;
+float:left;
+border:#000000;
+background-color:#F2F3F4;
+text-align:center;
+}
+
+.alterpwd{
+border:#000000;
+float:right;
+width:85%;
+text-align:center;
+}
